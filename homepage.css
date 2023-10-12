@@ -1,0 +1,129 @@
+/* setup page */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+.navbar-toggler {
+    background-color: wheat;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+/* styling header */
+.header {
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url('images/main.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0px;
+}
+
+
+/* top destination */
+@media (max-width: 1024px) {
+  .top_destination .top_destination-div .top_destination-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .top_destination .top_destination-div .top_destination-cards .icard .img {
+    object-fit: cover;
+    height: 200px;
+    padding: 0;
+    aspect-ratio: 4/2;
+  }
+}
+
+@media (max-width: 1450px) {
+  .top_destination .top_destination-div .top_destination-cards .icard .img {
+    object-fit: cover;
+    height: 200px;
+    padding: 0;
+    aspect-ratio: 4/2;
+  }
+}
+
+@media (max-width: 780px) {
+  .top_destination .top_destination-div .top_destination-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Our team leads section */
+.ourTeamLead .our-team-lead-cards {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 540px) {
+  .ourTeamLead .our-team-lead-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .our-team-lead-cards img {
+    height: 300px;
+    object-fit: cover;
+    aspect-ratio: 2/4;
+  }
+}
+
+/* Banner */
+.banner{
+    background-color: rgb(0, 40, 53) !important;
+}
+.banner .banner-div {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .banner .banner-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* overhead form travelers */
+@media (max-width: 1024px) {
+  .overhead_form_travelers .overhead-from-travelers-cards {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .overhead_form_travelers
+    .overhead-from-travelers-cards
+    .overhead-from-travelers-card {
+    width: 80%;
+  }
+}
+
+/* footer */
+.footer {
+    background-color: rgb(0, 40, 53) !important;
+}
+
+.footer img {
+    height: 25px;
+    aspect-ratio: 1;
+    margin-right: 4px;
+}
+
+.footer .icon-footer {
+    display:flex;
+    align-items: center;
+
+}
+
+@media (max-width: 400px) {
+  .footer .footer-padding-sm {
+    padding: 10px !important;
+  }
+}
